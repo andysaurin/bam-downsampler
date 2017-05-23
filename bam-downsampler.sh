@@ -125,7 +125,7 @@ do
 		fi
 
 		echo -n " Done. Sorting... "
-		samtools sort ${output_filepath} ${output_filepath}.sorted
+		samtools sort ${output_filepath} -o ${output_filepath}.sorted.bam
 
 		rc=$?;
 		if [[ $rc != 0 ]]; then
